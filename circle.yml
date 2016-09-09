@@ -1,5 +1,3 @@
-machine:
-
 dependencies:
   override:
     - git clone ${DEPLOY_TARGET_REPOSITORY} deployment
