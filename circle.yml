@@ -1,0 +1,13 @@
+machine:
+
+dependencies:
+  override:
+    - git clone ${DEPLOY_TARGET_REPOSITORY} deployment
+    - npm install
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - chmod +x ./deploy.sh
+      - ./deploy.sh
