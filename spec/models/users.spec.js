@@ -5,4 +5,7 @@ describe("users", function() {
     expect(users.authenticate("user", "user")).toBeTruthy();
   });
 
+  it("authenticate is fail.", function() {
+    expect(users.authenticate("user", "ng")).toBeFalsy();
+  });
 });
