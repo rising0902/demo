@@ -6,6 +6,7 @@ describe("users", function() {
   });
 
   it("authenticate is fail.", function() {
-    expect(users.authenticate("user", "ng")).toBeFalsy();
+    expect(users.authenticate("user", "test")).toBeFalsy();
   });
+
 });
