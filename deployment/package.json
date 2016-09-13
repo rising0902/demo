@@ -1,0 +1,24 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app/app"
+  },
+  "dependencies": {
+    "express": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "jade": "*",
+    "ms": "*"
+  },
+  "devDependencies": {
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "jasmine-node --verbose --captureExceptions ./spec"
+  }
+}
