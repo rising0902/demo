@@ -1,8 +1,8 @@
 #!/bin/bash
-git config --global user.email "{email}"
-git config --global user.name "{username}"
+git config --global user.email "${GIT_EMAIL}"
+git config --global user.name "${GIT_USERNAME}"
 
-rsync -auv --include="./app/" --include="package.json" --include=".gitignore" --include="README.md" --include="" ./ ./deployment
+rsync -auv --include="app/***" --include="package.json" --include="README.md" --exclude="*" ./ ./deployment
 
 cd deployment
 git add .
